@@ -7,7 +7,6 @@ import {
   Toolbar,
   Grid,
   Button,
-  Link,
 } from "@mui/material";
 import { Outlet } from "react-router-dom";
 import { Svgs } from "../data/data";

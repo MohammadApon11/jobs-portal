@@ -78,13 +78,13 @@ const AllJobs = () => {
                 key={index}
               >
                 {item}{" "}
-                {item === "BANGLADESH" ? (
+                {item === "Bangladesh" ? (
                   <img
                     style={{ width: "20px", marginLeft: "6px" }}
                     src="bd.svg"
                     alt=""
                   />
-                ) : item === "INDIA" ? (
+                ) : item === "India" ? (
                   <img
                     style={{ width: "20px", marginLeft: "6px" }}
                     src="in.svg"

@@ -43,7 +43,7 @@ const Apply = () => {
 
     try {
       const response = await axiosSecure.put(
-        `/applySubcategories/${positionData._id}`,
+        `http://localhost:5000/applySubcategories/${positionData._id}`,
         applicntDetails
       );
 
