@@ -123,4 +123,36 @@ Server side deploy in also vercel
 ```bash
   vercel
 ```
+## Used Dependencies
 
+### Client side
+- react
+- react-dom
+- react-router-dom
+- react-scripts
+- axios
+- react-spinners
+- sweetalert2
+- web-vitals
+- react-icons-kit
+- react-icons
+- react-hot-toast
+- react-hook-form
+- emotion/react
+- emotion/styled
+- material-ui/core
+- mui/icons-material
+- mui/material
+- mui/system
+- react-spring/web
+- testing-library/jest-dom
+- testing-library/react
+- testing-library/user-event
+- firebase
+### Server side
+- express
+- mongodb
+- jsonwebtoken
+- cors
+- dotenv
+- morgan
