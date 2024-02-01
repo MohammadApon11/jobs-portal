@@ -111,19 +111,6 @@ async function run() {
       res.send(result);
     });
 
-    // app.get("/categories", async (req, res) => {
-    //   try {
-    //     const { location } = req.query;
-    //     console.log("hit", location);
-    //     const filter = location ? { availableLocations: location } : {};
-    //     const jobs = await categoriesCollection.find(filter).toArray();
-    //     res.json(jobs);
-    //   } catch (error) {
-    //     console.error(error);
-    //     res.status(500).json({ error: "Internal Server Error" });
-    //   }
-    // });
-
     app.get("/categoriesFilter", async (req, res) => {
       try {
         const { location } = req.query;
@@ -259,7 +246,7 @@ async function run() {
       async (req, res) => {
         const { subcategoryId } = req.params;
         const { email, ...restOfData } = req.body;
-
+        console.log("hit",req.params);
         try {
           const subcategory = await subCategoriesCollection.findOne({
             _id: new ObjectId(subcategoryId),
