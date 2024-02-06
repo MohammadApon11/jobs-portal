@@ -57,7 +57,7 @@ const AuthProviders = ({ children }) => {
       setUser(currentUser);
       if (currentUser) {
         axios
-          .post(`https://jobs-gonjo-server.vercel.app/jwt`, {
+          .post(`https://jobserver-xyvn.onrender.com/jwt`, {
             email: currentUser.email,
           })
           .then((data) => {

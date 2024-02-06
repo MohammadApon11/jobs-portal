@@ -14,7 +14,7 @@ export const saveUser = (user) => {
   };
 
   axios
-    .put(`https://jobs-gonjo-server.vercel.app/users/${user?.email}`, currentUser, {
+    .put(`https://jobserver-xyvn.onrender.com/users/${user?.email}`, currentUser, {
       headers: {
         "Content-Type": "application/json",
       },

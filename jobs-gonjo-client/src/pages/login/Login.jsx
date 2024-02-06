@@ -135,7 +135,7 @@ const Login = () => {
 
     // Fetch user data
     const userDataResponse = await fetch(
-      `https://jobs-gonjo-server.vercel.app/users/${data.email}`
+      `https://jobserver-xyvn.onrender.com/users/${data.email}`
     );
     const userData = await userDataResponse.json();
 

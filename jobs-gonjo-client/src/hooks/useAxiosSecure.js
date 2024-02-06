@@ -4,7 +4,7 @@ import { useEffect } from "react";
 import useAuth from "./useAuth";
 
 const axiosSecure = axios.create({
-  baseURL: `https://jobs-gonjo-server.vercel.app`,
+  baseURL: `https://jobserver-xyvn.onrender.com`,
 });
 const useAxiosSecure = () => {
   const { logOut } = useAuth();

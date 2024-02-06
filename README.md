@@ -72,7 +72,7 @@ Start Locally
 ```
 ## If we want to integrate the client and server side together and run the local machine, then we need to change the base url at 9 places on the client side, Otherwise, we can run it on the local machine by just starting the client side, then the API endpoint's request response will be sent directly Come From vercel.
 
-#### This is the main url, https://jobs-gonjo-server.vercel.app/ change to http://localhost:5000/
+#### This is the main url, https://jobserver-xyvn.onrender.com/ change to http://localhost:5000/
 
 ```http
 1.   /src/components/AllJobs.jsx in this file 2 places url need change.

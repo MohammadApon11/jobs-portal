@@ -32,7 +32,7 @@ const SingleJob = ({ job, shouldReload, setShouldReload }) => {
   };
 
   useEffect(() => {
-    fetch(`https://jobs-gonjo-server.vercel.app/subcategories`)
+    fetch(`https://jobserver-xyvn.onrender.com/subcategories`)
       .then((res) => res.json())
       .then((data) => {
         const filteredSubCategories = data.filter(

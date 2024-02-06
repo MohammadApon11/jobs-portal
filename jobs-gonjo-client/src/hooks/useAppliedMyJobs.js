@@ -11,7 +11,7 @@ export const saveMyAppliedJobs = (position) => {
 
   axios
     .put(
-      `https://jobs-gonjo-server.vercel.app/myApplication/${position?.subCategoryName}`,
+      `https://jobserver-xyvn.onrender.com/myApplication/${position?.subCategoryName}`,
       appliedPosition,
       {
         headers: {

@@ -16,7 +16,7 @@ const AllJobs = () => {
   const { isRecruiter } = useCategoryName();
 
   useEffect(() => {
-    fetch(`https://jobs-gonjo-server.vercel.app/categories`)
+    fetch(`https://jobserver-xyvn.onrender.com/categories`)
       .then((res) => res.json())
       .then((data) => {
         setAllJobs(data);
@@ -36,7 +36,7 @@ const AllJobs = () => {
   const handleFilterText = (item) => {
     setFilterText(item);
     fetch(
-      `https://jobs-gonjo-server.vercel.app/categoriesFilter${
+      `https://jobserver-xyvn.onrender.com/categoriesFilter${
         item === "All Location" ? "" : `?location=${item.toLowerCase()}`
       }`
     )
