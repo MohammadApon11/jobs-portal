@@ -215,9 +215,11 @@ const Apply = () => {
               variant="contained"
               sx={{
                 mt: 2,
+                mb:10,
                 bgcolor: "rgb(24, 47, 89)",
                 ":hover": {
                   bgcolor: "rgb(24, 47, 89)",
+
                 },
               }}
             >
