@@ -124,13 +124,28 @@ const AllJobs = () => {
                 </Button>
               )}
             </Box>
-            {filterText === "All Location" ? (
-              allJobs?.length < 0 ? (
+            {allJobs.length > 0 ? (
+              filterText === "All Location" ? (
+                allJobs?.length < 0 ? (
+                  <Typography sx={{ textAlign: "center", fontSize: "40px" }}>
+                    Loading...
+                  </Typography>
+                ) : (
+                  allJobs?.map((job, index) => (
+                    <SingleJob
+                      job={job}
+                      key={index}
+                      shouldReload={shouldReload}
+                      setShouldReload={setShouldReload}
+                    />
+                  ))
+                )
+              ) : filterJobs?.length < 0 ? (
                 <Typography sx={{ textAlign: "center", fontSize: "40px" }}>
                   Loading...
                 </Typography>
               ) : (
-                allJobs?.map((job, index) => (
+                filterJobs?.map((job, index) => (
                   <SingleJob
                     job={job}
                     key={index}
@@ -139,19 +154,11 @@ const AllJobs = () => {
                   />
                 ))
               )
-            ) : filterJobs?.length < 0 ? (
-              <Typography sx={{ textAlign: "center", fontSize: "40px" }}>
-                Loading...
-              </Typography>
             ) : (
-              filterJobs?.map((job, index) => (
-                <SingleJob
-                  job={job}
-                  key={index}
-                  shouldReload={shouldReload}
-                  setShouldReload={setShouldReload}
-                />
-              ))
+              <Typography>
+                Need to reload becouse jobs gonjo server deploy on vercel and
+                vercel somtimes sending response to late or wait few seconds...
+              </Typography>
             )}
           </Box>
         </Box>
